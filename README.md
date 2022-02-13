@@ -1,7 +1,8 @@
 [![](https://jitpack.io/v/tubagus216/PopUps.svg)](https://jitpack.io/#tubagus216/PopUps)
 
 # PopUps
-This is simple and lightweight android library to make PopupMenu and ContextMenu with icon and beautiful UI :D
+This is simple and lightweight android library to make PopupMenu and ContextMenu with icon and beautiful UI 
+Without any aditional third party libraries
 
 ## Instalation
 
@@ -30,7 +31,7 @@ builder.addItem(new MenuItem("Share", R.drawable.ic_share));
 
 // View such as Button, TextView ListView etc.
 PopUps.createWith(view)
-  .instanceAs(Menu.asPopUpMenu()) //Showing popup or contextmenu
+  .instanceAs(Menu.asPopUpMenu()) 
   .setMenu(builder)
   .setOnItemClickListener(new PopUps.OnItemClickListener() {
       @Override
