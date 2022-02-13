@@ -24,11 +24,20 @@ dependencies {
 
 ## Use It
 ```java
-private void showMenu(View view, boolean isPopUp){ // View such as Button, TextView ListView etc. 
+
+// View such as Button, TextView ListView etc.
+
+private void showMenu(View view, boolean isPopUp){  
+  
+  //Menu Builder
+  
+  MenuBuilder builder = new Menu.Builder().build(); 
+  builder.addItem(new MenuItem("Android", R.drawable.ic_android));
+  builder.addItem(new MenuItem("Share", R.drawable.ic_share));
   
   PopUps.createWith(view)
           .instanceAs(isPopUp ? Menu.asPopUpMenu() : Menu.asContextMenu()) //Showing popup or contextmenu
-          .setMenu(getMenu())
+          .setMenu(builder)
           .setOnItemClickListener(new PopUps.OnItemClickListener() {
               @Override
               public void onItemClickListener(int position, MenuItem item) {
@@ -38,4 +47,4 @@ private void showMenu(View view, boolean isPopUp){ // View such as Button, TextV
           .show();
 }
 ```
-Full code [here:](https://github.com/tubagus216/PopUps/blob/main/app/src/main/java/dev/tubagusahmad/popups_example/MainActivity.java)
+Full code [here](https://github.com/tubagus216/PopUps/blob/main/app/src/main/java/dev/tubagusahmad/popups_example/MainActivity.java)
