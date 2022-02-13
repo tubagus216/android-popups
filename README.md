@@ -4,6 +4,9 @@
 This is simple and lightweight android library to make PopupMenu and ContextMenu with icon and beautiful UI 
 Without any aditional third party libraries
 
+## Demo
+[Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopUps-Example.apk)
+
 ## Instalation
 
 Add it in your root build.gradle at the end of repositories:
