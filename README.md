@@ -21,4 +21,20 @@ dependencies {
 }
 ```
 
+
 ## Use It
+```java
+private void showMenu(View view, boolean isPopUp){ // View such as Button, TextView ListView etc. 
+  
+  PopUps.createWith(view)
+          .instanceAs(isPopUp ? Menu.asPopUpMenu() : Menu.asContextMenu()) //Showing popup or contextmenu
+          .setMenu(getMenu())
+          .setOnItemClickListener(new PopUps.OnItemClickListener() {
+              @Override
+              public void onItemClickListener(int position, MenuItem item) {
+                  Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_LONG).show();
+              }
+          })
+          .show();
+}
+```
