@@ -1,7 +1,7 @@
 
 # PopUps
 This is simple and lightweight android library to make PopupMenu and ContextMenu with icon and beautiful UI 
-Without any aditional third party libraries
+
 
 [![](https://jitpack.io/v/tubagus216/PopUps.svg)](https://jitpack.io/#tubagus216/PopUps)
 
