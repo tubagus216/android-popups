@@ -5,6 +5,10 @@ This is simple and lightweight android library to make PopupMenu and ContextMenu
 Without any aditional third party libraries
 
 ## Demo
+
+ContextMenu:
+![](https://github.com/tubagus216/PopUps/blob/main/art/Screenshot_2022-02-13-22-39-38-035_dev.tubagusahmad.popups_example.png)
+
 [Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopUps-Example.apk)
 
 ## Instalation
