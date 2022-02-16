@@ -10,7 +10,7 @@ This is simple and lightweight android library to make PopupMenu and ContextMenu
 ![](https://github.com/tubagus216/PopUps/blob/main/art/WhatsApp%20Image%202022-02-16%20at%2023.35.34.jpeg)
 ![](https://github.com/tubagus216/PopUps/blob/main/art/WhatsApp%20Image%202022-02-16%20at%2023.35.33.jpeg)
 
-Or Download [Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopUpsExample.apk)
+Or Download [Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopupsExample.apk)
 
 ## Instalation
 
