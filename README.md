@@ -26,7 +26,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	implementation 'com.github.tubagus216:PopUps:v0.1.0'
+	implementation 'com.github.tubagus216:PopUps:v0.5.0'
 }
 ```
 
@@ -53,4 +53,3 @@ PopUps.createWith(view)
 ```
 Full code [here](https://github.com/tubagus216/PopUps/blob/main/app/src/main/java/dev/tubagusahmad/popups_example/MainActivity.java)
 
-You also can contrib with this library :)
