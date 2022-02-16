@@ -3,6 +3,7 @@ package dev.tubagusahmad.popups_example;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.View;
@@ -81,11 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
         MenuBuilder builder = new Menu.Builder().build(); //Menu Builder
 
-        builder.addItem(new MenuItem("Android", R.drawable.ic_android));
-        builder.addItem(new MenuItem("Share", R.drawable.ic_share));
-        builder.addItem(new MenuItem("Download", R.drawable.ic_download));
-        builder.addItem(new MenuItem("Setting", R.drawable.ic_setting));
-        builder.addItem(new MenuItem("Delete", R.drawable.ic_delete));
+        builder.addItem(new MenuItem("Android", R.drawable.ic_android, Color.GRAY)); //Colored Item
+        builder.addItem(new MenuItem("Share", R.drawable.ic_share, Color.BLUE)); //Colored Item
+        builder.addItem(new MenuItem("Download", R.drawable.ic_download, Color.GREEN)); //Colored Item
+        builder.addItem(new MenuItem("Setting", R.drawable.ic_setting)); //Normal Item
+        builder.addItem(new MenuItem("Delete", R.drawable.ic_delete, Color.RED)); //Colored Item
 
         return builder;
     }

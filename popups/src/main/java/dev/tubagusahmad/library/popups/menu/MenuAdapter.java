@@ -46,6 +46,11 @@ public class MenuAdapter extends BaseAdapter {
         ItemViewHolder holder = new ItemViewHolder(view);
         MenuItem item = menuItems.get(i);
 
+        if (!(item.getColor() == 0)){
+            holder.icon.setColorFilter(item.getColor());
+            holder.title.setTextColor(item.getColor());
+        }
+
         holder.title.setText(item.getTitle());
         holder.icon.setImageResource(item.getIcon());
 
