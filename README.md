@@ -7,10 +7,10 @@ This is simple and lightweight android library to make PopupMenu and ContextMenu
 
 ## Demo
 
-![](https://github.com/tubagus216/PopUps/blob/main/art/Screenshot_2022-02-13-22-39-46-319_dev.tubagusahmad.popups_example.png)
-![](https://github.com/tubagus216/PopUps/blob/main/art/Screenshot_2022-02-13-22-39-38-035_dev.tubagusahmad.popups_example.png)
+![](https://github.com/tubagus216/PopUps/blob/main/art/WhatsApp%20Image%202022-02-16%20at%2023.35.34.jpeg)
+![](https://github.com/tubagus216/PopUps/blob/main/art/WhatsApp%20Image%202022-02-16%20at%2023.35.33.jpeg)
 
-Or Download [Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopUps-Example.apk)
+Or Download [Demo Apk](https://github.com/tubagus216/PopUps/blob/main/art/PopUpsExample.apk)
 
 ## Instalation
 
@@ -34,8 +34,10 @@ dependencies {
 ## Use It
 ```java
 MenuBuilder builder = new Menu.Builder().build(); 
-builder.addItem(new MenuItem("Android", R.drawable.ic_android));
-builder.addItem(new MenuItem("Share", R.drawable.ic_share));
+builder.addItem(new MenuItem("Android", R.drawable.ic_android)); //Normal
+builder.addItem(new MenuItem("Share", R.drawable.ic_share, Color.BLUE)); //Colored
+builder.addItem(new MenuItem("Android", R.drawable.ic_setting));
+builder.addItem(new MenuItem("Share", R.drawable.ic_delete, Color.RED));
 
 // View such as Button, TextView ListView etc.
 PopUps.createWith(view)
