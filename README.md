@@ -34,10 +34,28 @@ dependencies {
 ## Use It
 ```java
 MenuBuilder builder = new Menu.Builder().build(); 
-builder.addItem(new MenuItem("Android", R.drawable.ic_android)); //Normal
-builder.addItem(new MenuItem("Share", R.drawable.ic_share, Color.BLUE)); //Colored
-builder.addItem(new MenuItem("Android", R.drawable.ic_setting));
-builder.addItem(new MenuItem("Share", R.drawable.ic_delete, Color.RED));
+//No colored and with no icon item
+        
+builder.addItem(new MenuItem("Android")); 
+ 
+       
+		
+//Colored with no icon item
+		
+builder.addItem(new MenuItem("Android", Color.BLUE));
+		
+		
+
+//No colored with icon item
+		
+builder.addItem(new MenuItem(R.drawable.ic_android, "Android"));
+	
+	
+		
+//Colored with icon item
+		
+builder.addItem(new MenuItem(R.drawable.ic_android, "Android", Color.GREEN));
+		
 
 // View such as Button, TextView ListView etc.
 PopUps.createWith(view)

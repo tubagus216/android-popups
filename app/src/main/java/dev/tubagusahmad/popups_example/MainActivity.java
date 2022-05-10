@@ -82,13 +82,21 @@ public class MainActivity extends AppCompatActivity {
 
         MenuBuilder builder = new Menu.Builder().build(); //Menu Builder
 
-        builder.addItem(new MenuItem("Android", R.drawable.ic_android, Color.GRAY)); //Colored Item
-        builder.addItem(new MenuItem("Share", R.drawable.ic_share, Color.BLUE)); //Colored Item
-        builder.addItem(new MenuItem("Download", R.drawable.ic_download, Color.GREEN)); //Colored Item
-        builder.addItem(new MenuItem("Setting", R.drawable.ic_setting)); //Normal Item
-        builder.addItem(new MenuItem("Delete", R.drawable.ic_delete, Color.RED)); //Colored Item
-
+		//No colored and with no icon item
+        builder.addItem(new MenuItem("Android")); 
+        
+		//Colored with no icon item
+		builder.addItem(new MenuItem("Android", Color.BLUE));
+		
+		//No colored with icon item
+		builder.addItem(new MenuItem(R.drawable.ic_android, "Android"));
+		
+		//Colored with icon item
+		builder.addItem(new MenuItem(R.drawable.ic_android, "Android", Color.GREEN));
+		
         return builder;
+		
+		
     }
 
     private List<String> getList(){

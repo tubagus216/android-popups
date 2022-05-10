@@ -52,7 +52,12 @@ public class MenuAdapter extends BaseAdapter {
         }
 
         holder.title.setText(item.getTitle());
-        holder.icon.setImageResource(item.getIcon());
+        
+		if(!(item.getIcon() == 0)){
+			holder.icon.setImageResource(item.getIcon());
+		}else{
+			holder.icon.setVisibility(View.GONE);
+		}
 
         return view;
     }
