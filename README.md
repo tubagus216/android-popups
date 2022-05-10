@@ -26,7 +26,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	implementation 'com.github.tubagus216:PopUps:v0.5.0'
+	implementation 'com.github.tubagus216:PopUps:v1.0.0'
 }
 ```
 
@@ -34,6 +34,7 @@ dependencies {
 ## Use It
 ```java
 MenuBuilder builder = new Menu.Builder().build(); 
+
 //No colored and with no icon item
         
 builder.addItem(new MenuItem("Android")); 
